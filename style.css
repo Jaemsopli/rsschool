@@ -26,6 +26,7 @@ body {
   max-width: 800px;
   margin: auto;
 }
+
  aside {
   width: 200px;
   float: right;
@@ -55,4 +56,54 @@ a {
 div h2 {
 display: inline-block;
 background-color: #808080
+}
+
+@media screen and (max-width: 400px) {
+body { 
+margin: 0;
+width: 90%;
+}
+section {
+  float: left;
+}
+#image { 
+display: block;
+float: center;
+}
+h1 {
+  float:center;
+}
+.wrapper {
+  
+  flex-direction: column;
+ width: 70%;
+}
+aside {
+  margin: 0;
+  float: left;
+}
+}
+@media screen and (max-width: 600px) {
+  body {
+  margin: auto;
+  width: 90%;
+  }
+  #image { 
+  display: block;
+  margin: auto;
+  }
+  h1 {
+    text-align: center;
+  }
+  section {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 601px) {
+  body {
+  margin: 20px 20px 20px 20px;
+  }
+  #image {
+    float: right;
+  }
 }
