@@ -10,28 +10,43 @@
     <body>
     <header>
         <div class="header">
+            <div id="sidebar">
+                <div class="button" onclick="openmenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>   
             <div class="logo">
                 <img src="/rsschool-cv/Singolo/pictures/logo.png">
-            </div>             
+            </div>       
             <div class="navigation">
-                    <span class="home"><a href="Portfolio.html">HOME </a></span>
-                    <span><a href="#">· SERVICES · </a></span>
-                    <span><a href="https://vk.com/im_love_tourism">PORTFOLIO · </a></span>
-                    <span><a href="#">ABOUT · </a></span>
-                    <span><a href="#">CONTACT · </a></span>    
+            <ul>
+                <li><a href="Portfolio.html" id="home">HOME</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="https://vk.com/im_love_tourism">PORTFOLIO</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT </a></li>
+            </ul>             
             </div>
         </div>
+    </div>  
+   <script>
+       function openmenu() {
+           document.getElementById("sidebar").classList.toggle('exit');
+       }
+   </script>
     </header>
     <div class="iphone">
+    
         <div class="phone">
             <img src="/rsschool-cv/Singolo/pictures/Slide-1.png" alt="foto">
          </div>
-        </div> 
         <div class="hidden-iphone">
 <div class="phone-2">
 <img src="/rsschool-cv/Singolo/pictures/Slide-2.jpg" alt="foto">
 </div>
-        </div>       
+</div>   
+    </div> 
     <main>
         <h1>Our Services</h1>
         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non

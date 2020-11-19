@@ -52,14 +52,17 @@ margin: auto;
     float: left;
 }
 .navigation {
-    float: right;
-    margin: 42px 40px 33px 0px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 20px 0px 0px; 
+}
+ul li {
+    display: inline;    
 }
 .navigation a {
     text-decoration: none;
-
 }
- .home a { 
+ #home  { 
      color: red;
  }
  main {
@@ -68,6 +71,9 @@ margin: auto;
 
  .iphone {
      width: 100%;
+     position: relative;
+  
+
  }
  .hidden-iphone {
      width: 100%;
@@ -174,13 +180,7 @@ text-decoration: none;
 }
 }
 @media (min-width: 600px) and (max-width: 749px) { 
-.navigation {
-display: none;
-}
-.logo {
-display: flex;
-justify-content: center;
-}
+
 .text-2 {
     width: 50%; 
     display: flex;
@@ -205,13 +205,48 @@ justify-content: center;
 }
 
 @media (min-width: 375px) and (max-width: 599px) {
-    .navigation {
-        display: none;
+       
+#sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background: #2D303A;
+margin: 0px;
+padding: 0px;
+left: -250px;
+    }
+    ul li {
+        display: block; 
+        padding:  15px;
         }
+        .navigation {
+            display: block;
+            padding: 20px 20px 0px 0px;
+            margin: 0 30px;  
+        }
+   #sidebar .button {
+position: absolute;
+left: 270px;
+top: 20px;
+background: #2D303A;
+padding: 10px;
+cursor: pointer;
+border-radius: 6px;
+   }
+#sidebar .button span {
+    display: block;
+    width: 25px;
+    height: 4px;
+    background: white;
+    margin: 4px;
+}
+#sidebar.exit {
+    left: 0px;
+}
         .logo {
-        display: flex;
-        justify-content: center;
-        }
+            display: flex;
+            justify-content: center;
+            }
         .text-2 {
             width: 100%; 
             display: flex;
@@ -244,9 +279,44 @@ justify-content: center;
             }
 }
 @media  (max-width: 374px) {
-    .navigation {
-        display: none;
+    #sidebar {
+        position: fixed;
+        width: 250px;
+        height: 100%;
+        background: #2D303A;
+    margin: 0px;
+    padding: 0px;
+    left: -250px;
         }
+        ul li {
+            display: block; 
+            padding:  15px;
+            }
+            .navigation {
+                display: block;
+                padding: 20px 20px 0px 0px;
+                margin: 0 30px;  
+            }
+       #sidebar .button {
+    position: absolute;
+    left: 270px;
+    top: 20px;
+    background: #2D303A;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+       }
+    #sidebar .button span {
+        display: block;
+        width: 25px;
+        height: 4px;
+        background: white;
+        margin: 4px;
+    }
+    #sidebar.exit {
+        left: 0px;
+    }
+
         .logo {
         display: flex;
         justify-content: center;
