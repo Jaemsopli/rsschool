@@ -71,16 +71,16 @@ ul li {
 
  .iphone {
      width: 100%;
-     position: relative;
-  
 
  }
  .hidden-iphone {
      width: 100%;
      display: none;
+    
  }
  .phone-2 img {
      width: 100%;
+    
  }
  .phone img {
      width: 100%;
