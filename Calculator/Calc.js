@@ -62,6 +62,8 @@ function operation(oper) {
     memoryCurrentNumber *= parseFloat(localMemory);
     } else if (memoryPendingOperation === '/') {
     memoryCurrentNumber /= parseFloat(localMemory);
+    } else if (memoryPendingOperation === '%') {
+    memoryCurrentNumber %= parseFloat(localMemory);
     } else {
     memoryCurrentNumber = parseFloat(localMemory);
     };
