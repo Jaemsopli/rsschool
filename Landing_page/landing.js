@@ -19,7 +19,7 @@ let today = new Date(),
 const amPm = hour >= 12 ? 'PM' : 'AM';
 
 // 12hr Format
-hour = hour % 12 || 12;
+hour = hour % 24 || 12;
 
 // Output Time
 time.innerHTML = `${hour}<span>:</span>${addZero(min)}<span>:</span>${addZero(
@@ -49,7 +49,7 @@ if (hour < 12) {
   greeting.textContent = 'Добрый день, ';
 } else if (hour < 22) {
   // Evening
-  document.body.style.backgroundImage = "url('/rsschool-cv/Landing_page/picture/Night.jpg')";
+  document.body.style.backgroundImage = "url('/rsschool-cv/Landing_page/picture/Evening.jpg')";
   greeting.textContent = 'Добрый вечер, ';
   document.body.style.color = 'white';
 // Night
