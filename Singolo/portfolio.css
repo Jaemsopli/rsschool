@@ -42,10 +42,7 @@ a:link {
     border-bottom: 5.25px solid blue;
 }
 
-.body {height: 683px;
-background: #F06C64;
-margin: auto;
-}
+
 
 .logo img {
     margin: 29px 0px 35px 40px;
@@ -69,22 +66,32 @@ ul li {
     margin: 0 40px 0 40px;
  }
 
- .iphone {
-     width: 100%;
+ .flex {
+    width: 60%;
+    display: flex;
+    overflow: hidden;
+ 
+  
+}
+ .flex-fone-1 {
+background: red;
 
  }
- .hidden-iphone {
-     width: 100%;
-     display: none;
-    
- }
- .phone-2 img {
-     width: 100%;
-    
- }
- .phone img {
-     width: 100%;
- }
+
+ .flex-fone-2 {
+    background: blue;
+   
+     }
+
+.flex-size {
+width: 100%;
+}
+
+
+}
+
+
+
 .text { 
 margin: 0 40px 0 40px;
 display: flex;
