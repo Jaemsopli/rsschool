@@ -1,0 +1,17 @@
+body {
+    max-width: 800px;
+    margin: auto;
+}
+
+figure img {
+    width: 60%;
+    display: block;
+    margin: auto;
+}
+#image-caption, h1, h3, p {
+    text-align: center;
+}
+#tribute-info { 
+    font-family: "Times New Roman", Georgia, Serif;
+    line-height: 2;
+}

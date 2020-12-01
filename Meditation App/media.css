@@ -1,0 +1,81 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.fone img {
+    width: 110%;
+}
+
+.logo img {
+    width: 100%;
+    height: 300px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+A:link { 
+    text-decoration: none;
+    color: black; 
+}
+A:visited { 
+    text-decoration: none;
+    color: black;  
+}
+A:active { 
+    text-decoration: none;
+    color: black; 
+}
+A:hover {
+    padding: 5px 15px 5px 15px;
+    background: orange;
+    border-radius: 6px;
+    color: white; 
+}
+
+.header {
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.image p {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px; 
+}
+.see {
+    position: absolute; 
+}
+.container {
+    margin: 20px 40px;
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+}
+
+ .image img {
+    width: 100%;
+    height: 45%;
+    border-radius: 30px;
+ }
+
+ .audio audio {
+    margin: 10px 0;
+    width: 100%;
+ }
+ 
+ 
+
+

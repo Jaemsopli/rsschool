@@ -24,6 +24,8 @@
 .linkedin a:hover {background: #0e76a8; color: #fff;}
 .telegram a:hover {background: #249bd7; color: #fff;}
 
+
+
 p, h1 h2 {
  font-family: 'Lato', sans-serif;
 }
@@ -66,29 +68,56 @@ ul li {
     margin: 0 40px 0 40px;
  }
 
- .flex {
-    width: 60%;
-    display: flex;
-    overflow: hidden;
- 
-  
-}
- .flex-fone-1 {
-background: red;
-
+ .container {
+     padding: 30px;
+     
+     border: none;
  }
 
- .flex-fone-2 {
-    background: blue;
-   
-     }
+ .container {
+     display: flex;
+     justify-content: space-around;
+     position: relative;
+ }
 
-.flex-size {
-width: 100%;
+ .flex-container {
+width: 75%;
+margin: auto;
+overflow: hidden;
+
+
 }
 
+ .flex-size {
+    display: flex;
+    width: 100%;
+    
+ }
 
+ .flex-size img {
+    width: 100%;
 }
+
+ .container #prevBtn {
+   position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 5%;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+ }
+ .container #nextBtn {
+  position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 5%;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+  
+
 
 
 
