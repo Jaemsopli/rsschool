@@ -77,7 +77,10 @@ ul li {
  .container {
      display: flex;
      justify-content: space-around;
+<<<<<<< HEAD
      position: relative;
+=======
+>>>>>>> 71fe98f3224f4ba905eeb488a74c6e8fa011907c
  }
 
  .flex-container {
@@ -91,6 +94,7 @@ overflow: hidden;
  .flex-size {
     display: flex;
     width: 100%;
+<<<<<<< HEAD
     
  }
 
@@ -113,6 +117,30 @@ overflow: hidden;
     z-index: 10;
     right: 5%;
     font-size: 30px;
+=======
+ }
+
+ .flex-size img {
+    width: 100%;
+}
+
+ #prevBtn {
+   
+    top: 10%;
+    
+    z-index: 10;
+    left: 50%;
+    font-size: 50px;
+    color: black;
+    cursor: pointer;
+ }
+    #nextBtn {
+  
+    top: 50%;
+    z-index: 10;
+    right: -90%;
+    font-size: 50px;
+>>>>>>> 71fe98f3224f4ba905eeb488a74c6e8fa011907c
     color: black;
     cursor: pointer;
 }
