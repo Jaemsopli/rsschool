@@ -15,6 +15,11 @@
     color: black;
   }
   
+  document.body.style.backgroundImage {
+   width: 1000px;
+   height: 1000px;
+   background-size: 1000px 1000px;
+  }
 
   #time {
     font-size: 8rem;

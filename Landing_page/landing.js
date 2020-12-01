@@ -42,22 +42,30 @@ let today = new Date(),
 if (hour < 12) {
   // Morning
   document.body.style.backgroundImage = "url('/rsschool-cv/Landing_page/picture/Morning.jpg')";
+  document.body.style.backgroundRepeat="no-repeat";
+  document.body.style.backgroundSize="100%";
   greeting.textContent = 'Доброе утро, ';
 } else if (hour < 17) {
   // Afternoon
   document.body.style.backgroundImage = "url('/rsschool-cv/Landing_page/picture/Day.jpg')";
+  document.body.style.backgroundRepeat="no-repeat";
+  document.body.style.backgroundSize="100%";
   greeting.textContent = 'Добрый день, ';
 } else if (hour < 22) {
   // Evening
   document.body.style.backgroundImage = "url('/rsschool-cv/Landing_page/picture/Evening.jpg')";
+  document.body.style.backgroundRepeat="no-repeat";
+  document.body.style.backgroundSize="100%";
   greeting.textContent = 'Добрый вечер, ';
   document.body.style.color = 'white';
 // Night
 } else {
   document.body.style.backgroundImage = "url('/rsschool-cv/Landing_page/picture/Night.jpg')";
+  document.body.style.backgroundRepeat="no-repeat";
+  document.body.style.backgroundSize="100%";
   greeting.textContent = 'Доброй ночи, ';
   document.body.style.color = 'white';
-}
+ }
 }
 
 // Get Name
