@@ -1,8 +1,35 @@
-const slide = document.querySelector('.flex-size');
-const slideImg = document.querySelectorAll('.flex-size img');
 
-const prevBtn = document.querySelector('#prevBtn');
-const nextBtn = document.querySelector('#nextBtn');
+const slide = document.querySelectorAll('.flex-container');
+const slideImg = document.querySelectorAll('.flex-container img');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+const turnOffTheScreen = document.querySelector('.button-circle')
+//let first = document.querySelector('#first');
+//let last = document.querySelector('#last');
+//let fon =  document.querySelector('.container');
+
+
+turnOffTheScreen.addEventListener('click', () => {
+ alert('выключить?');
+});
+
+ 
+ let i = 1;
+
+const next = () => {
+if (i === slideImg.lenght - 1) {
+  i = 0;
+ }
+}
+
+
+
+/*i = 0;
+fon.onclick = function() {
+    this.style.background = 'blue';
+this.style.background = 'red';
+  i++;
+}
 
 let counter = 1;
 const size = slideImg[0].clientWidth;
@@ -34,3 +61,17 @@ counter = slideImg.length - counter;
 slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 }
 });
+
+
+
+/*{
+ {
+    console.log(slideImg[i]);
+    
+}
+}
+*/
+
+
+
+
