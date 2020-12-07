@@ -67,18 +67,43 @@ ul li {
  main {
     margin: 0 40px 0 40px;
  }
+ 
+.phone:hover {
+    transform: scale(1.2); 
+    transition-duration: 700ms;
+}
 
+.phone-2:hover {  
+    transform: scale(1.2) rotate(90deg) translate(0%, 30%);
+    transition-duration: 700ms;
+   } 
+
+.slide {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.active {
+    display: block;
+}
+
+.disable {
+    display: none;
+}
 
  .background-container {
     background: #F06C64;
     position: relative;
+    width: 100%;
  }
  .background-container-2 {
     background: #648BF0;
  }
 .container,
 .container-2 {
-    width: 800px;
+    width: 850px;
+    height: 500px;
     display: flex;
     margin: auto;
     padding: 50px 0;
@@ -215,7 +240,7 @@ ul li {
     border-radius: 3px;
     z-index: 3;
 }
-.phone-picture-turn img {
+.turn img {
     display: none;
 }
 .container-2 .phone-picture  {
@@ -229,12 +254,13 @@ ul li {
 }
 
 button.next,
-.prev {
-   cursor: pointer;
+button.prev {
+    cursor: pointer;
 }
+
 .arrow-3-top, 
 .arrow-3-bottom {
-    background: #337AB7;
+    background: gray;
     height: 10px;
    left: 15%;
     position: absolute;
@@ -258,7 +284,7 @@ button.next,
 
 .arrow-2-top, 
 .arrow-2-bottom {
-    background: #337AB7;
+    background: gray;
     height: 10px;
    left: 85%;
     position: absolute;

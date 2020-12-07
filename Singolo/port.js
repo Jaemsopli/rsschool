@@ -1,28 +1,26 @@
 
-const slide = document.querySelectorAll('.flex-container');
-const slideImg = document.querySelectorAll('.flex-container img');
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
-const turnOffTheScreen = document.querySelector('.button-circle')
-//let first = document.querySelector('#first');
-//let last = document.querySelector('#last');
-//let fon =  document.querySelector('.container');
+const turnOffTheScreen = document.querySelector('.button-circle');
+const screen = document.querySelector('.phone-picture');
+const next = document.querySelector('.next');
+const prev = document.querySelector('.prev');
+const blue = document.querySelector('.background-container-2');
+const roz = document.querySelector('.background-container');
 
 
-turnOffTheScreen.addEventListener('click', () => {
- alert('выключить?');
-});
+document.getElementById("sidebar").classList.toggle('exit'); 
 
- 
- let i = 1;
-
-const next = () => {
-if (i === slideImg.lenght - 1) {
-  i = 0;
- }
-}
+let btn = document.getElementsByClassName('button-circle');
+let scr = document.getElementsByClassName('phone-picture');
+for(let i = 0; i < btn.length; i++)
+for(let i = 0; i < scr.length; i++)
+btn[i].onclick = function()  {scr[i].classList.toggle('turn');}
+    
+//next.onclick = function()  {blue.classList.remove('disable');}  работает неккоретно
+//next.onclick = function()  {roz.classList.toggle('disable');}
 
 
+
+// turnOffTheScreen.onclick = function() {screen.classList.toggle('turn');}
 
 /*i = 0;
 fon.onclick = function() {
