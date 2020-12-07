@@ -7,6 +7,12 @@ let memoryCurrentNumber = 0;
 let memoryNewNumber = false;
 let memoryPendingOperation = '';
 
+let btn = document.getElementsByClassName('button-circle');
+let scr = document.getElementsByClassName('calculator');
+for(let i = 0; i < btn.length; i++)
+for(let i = 0; i < scr.length; i++)
+btn[i].onclick = function()  {scr[i].classList.toggle('turn');}
+
 
 for (let i = 0; i < numbers.length; i++) {
     let number = numbers[i];
