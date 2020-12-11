@@ -1,2 +1,2 @@
-https://github.com/Jaemsopli/rsschool-cv/cv
+https://jaemsopli.github.io/rsschool-cv/cv
 
